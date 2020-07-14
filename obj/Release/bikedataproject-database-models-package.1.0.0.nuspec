@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>bikedataproject-database-models-package</id>
+    <version>1.0.0</version>
+    <authors>bikedataproject-database-models-package</authors>
+    <owners>bikedataproject-database-models-package</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Npgsql.EntityFrameworkCore.PostgreSQL" version="3.1.4" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\riche\Documents\oSoc20\Codes\bikedataproject-database-models-package\bin\Release\netstandard2.0\bikedataproject-database-models-package.dll" target="lib\netstandard2.0\bikedataproject-database-models-package.dll" />
+  </files>
+</package>

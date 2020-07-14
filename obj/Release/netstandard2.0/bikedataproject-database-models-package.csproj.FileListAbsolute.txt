@@ -1,0 +1,9 @@
+C:\Users\riche\Documents\oSoc20\Codes\bikedataproject-database-models-package\bin\Release\netstandard2.0\bikedataproject-database-models-package.deps.json
+C:\Users\riche\Documents\oSoc20\Codes\bikedataproject-database-models-package\bin\Release\netstandard2.0\bikedataproject-database-models-package.dll
+C:\Users\riche\Documents\oSoc20\Codes\bikedataproject-database-models-package\bin\Release\netstandard2.0\bikedataproject-database-models-package.pdb
+C:\Users\riche\Documents\oSoc20\Codes\bikedataproject-database-models-package\obj\Release\netstandard2.0\bikedataproject-database-models-package.csprojAssemblyReference.cache
+C:\Users\riche\Documents\oSoc20\Codes\bikedataproject-database-models-package\obj\Release\netstandard2.0\bikedataproject-database-models-package.AssemblyInfoInputs.cache
+C:\Users\riche\Documents\oSoc20\Codes\bikedataproject-database-models-package\obj\Release\netstandard2.0\bikedataproject-database-models-package.AssemblyInfo.cs
+C:\Users\riche\Documents\oSoc20\Codes\bikedataproject-database-models-package\obj\Release\netstandard2.0\bikedataproject-database-models-package.csproj.CoreCompileInputs.cache
+C:\Users\riche\Documents\oSoc20\Codes\bikedataproject-database-models-package\obj\Release\netstandard2.0\bikedataproject-database-models-package.dll
+C:\Users\riche\Documents\oSoc20\Codes\bikedataproject-database-models-package\obj\Release\netstandard2.0\bikedataproject-database-models-package.pdb
