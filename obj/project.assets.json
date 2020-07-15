@@ -1373,19 +1373,21 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "restore": {
-      "projectUniqueName": "c:\\Users\\riche\\Documents\\oSoc20\\Codes\\bikedataproject-database-models-package\\bikedataproject-database-models-package.csproj",
-      "projectName": "bikedataproject-database-models-package",
-      "projectPath": "c:\\Users\\riche\\Documents\\oSoc20\\Codes\\bikedataproject-database-models-package\\bikedataproject-database-models-package.csproj",
+      "projectUniqueName": "C:\\Users\\riche\\Documents\\oSoc20\\Codes\\bikedataproject-database-models-package\\bikedataproject-database-models-package.csproj",
+      "projectName": "bikedataproject.database.models.package",
+      "projectPath": "C:\\Users\\riche\\Documents\\oSoc20\\Codes\\bikedataproject-database-models-package\\bikedataproject-database-models-package.csproj",
       "packagesPath": "C:\\Users\\riche\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\riche\\Documents\\oSoc20\\Codes\\bikedataproject-database-models-package\\obj\\",
+      "outputPath": "C:\\Users\\riche\\Documents\\oSoc20\\Codes\\bikedataproject-database-models-package\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
+        "C:\\Users\\riche\\Documents\\oSoc20\\Codes\\bikedataproject-database-models-package\\NuGet.Config",
+        "C:\\Users\\riche\\Documents\\oSoc20\\Codes\\NuGet.Config",
         "C:\\Users\\riche\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -1394,8 +1396,7 @@
         "netstandard2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://nuget.pkg.github.com/bikedataproject/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {

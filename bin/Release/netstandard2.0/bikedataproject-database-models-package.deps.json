@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "bikedataproject-database-models-package/1.0.0": {
+      "bikedataproject-database-models-package/1.0.1": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "3.1.5",
           "NETStandard.Library": "2.0.3",
@@ -366,7 +366,7 @@
     }
   },
   "libraries": {
-    "bikedataproject-database-models-package/1.0.0": {
+    "bikedataproject-database-models-package/1.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

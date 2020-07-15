@@ -3,6 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>bikedataproject_database_models_package</RootNamespace>
+    <PackageId>bikedataproject.database.models.package</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>Ben, Guillaume, Bert, Antoine</Authors>
+    <Company>Open Knowledge Belgium</Company>
+    <PackageDescription>Contains the models for the BDP database</PackageDescription>
+    <RepositoryUrl>https://github.com/bikedataproject/bikedataproject-database-models-package</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

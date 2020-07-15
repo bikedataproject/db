@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace BDPDatabase 
+namespace BDPDatabase
 {
     public class User
     {
@@ -10,6 +10,8 @@ namespace BDPDatabase
         public Guid UserIdentifier { get; set; }
 
         public string Provider { get; set; }
+
+        public string ProviderUser { get; set; }
 
         public string AccessToken { get; set; }
 

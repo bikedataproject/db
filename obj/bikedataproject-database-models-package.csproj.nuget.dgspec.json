@@ -5,10 +5,10 @@
   },
   "projects": {
     "C:\\Users\\riche\\Documents\\oSoc20\\Codes\\bikedataproject-database-models-package\\bikedataproject-database-models-package.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "restore": {
         "projectUniqueName": "C:\\Users\\riche\\Documents\\oSoc20\\Codes\\bikedataproject-database-models-package\\bikedataproject-database-models-package.csproj",
-        "projectName": "bikedataproject-database-models-package",
+        "projectName": "bikedataproject.database.models.package",
         "projectPath": "C:\\Users\\riche\\Documents\\oSoc20\\Codes\\bikedataproject-database-models-package\\bikedataproject-database-models-package.csproj",
         "packagesPath": "C:\\Users\\riche\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\riche\\Documents\\oSoc20\\Codes\\bikedataproject-database-models-package\\obj\\",
@@ -18,6 +18,8 @@
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
+          "C:\\Users\\riche\\Documents\\oSoc20\\Codes\\bikedataproject-database-models-package\\NuGet.Config",
+          "C:\\Users\\riche\\Documents\\oSoc20\\Codes\\NuGet.Config",
           "C:\\Users\\riche\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -26,8 +28,7 @@
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://nuget.pkg.github.com/bikedataproject/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
