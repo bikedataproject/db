@@ -3,15 +3,17 @@ using System;
 using BDPDatabase;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace BDPDatabase
 {
     [DbContext(typeof(BikeDataDbContext))]
-    partial class BikeDataDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200715124056_AddUserProvider")]
+    partial class AddUserProvider
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
