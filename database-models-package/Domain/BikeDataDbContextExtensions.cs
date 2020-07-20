@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace BDPDatabase
@@ -25,15 +26,37 @@ namespace BDPDatabase
         {
             dbContext.UserContributions.Add(userContribution);
         }
-        
+
         public static User ContainsProviderUser(this BikeDataDbContext dbContext, string providerUser)
         {
-            return dbContext.Users.FirstOrDefault(u => u.ProviderUser == providerUser);            
+            return dbContext.Users.FirstOrDefault(u => u.ProviderUser == providerUser);
         }
 
         public static void AddUser(this BikeDataDbContext dbContext, User user)
         {
             dbContext.Users.Add(user);
+        }
+
+        public static IEnumerable<int> GetContributionsIds(this BikeDataDbContext dbContext, int userIdentifier)
+        {
+            return dbContext.UserContributions.Where(uc => uc.UserId == userIdentifier).Select(uc => uc.ContributionId);
+        }
+
+        public static void DeleteContributions(this BikeDataDbContext dbContext, IEnumerable<int> contributionIds)
+        {
+            var contributions = new List<Contribution>();
+            var userContributions = new List<UserContribution>();
+
+            foreach (var contributionId in contributionIds)
+            {
+                contributions.Add(new Contribution() { ContributionId = contributionId });
+                userContributions.Add(new UserContribution() { ContributionId = contributionId });
+            }
+
+            dbContext.UserContributions.RemoveRange(userContributions);
+            dbContext.Contributions.RemoveRange(contributions);
+
+            dbContext.SaveChanges();
         }
 
         public static void SaveChanges(this BikeDataDbContext dbContext) => dbContext.SaveChanges();
