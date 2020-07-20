@@ -25,6 +25,16 @@ namespace BDPDatabase
         {
             dbContext.UserContributions.Add(userContribution);
         }
+        
+        public static User ContainsProviderUser(this BikeDataDbContext dbContext, string providerUser)
+        {
+            return dbContext.Users.FirstOrDefault(u => u.ProviderUser == providerUser);            
+        }
+
+        public static void AddUser(this BikeDataDbContext dbContext, User user)
+        {
+            dbContext.Users.Add(user);
+        }
 
         public static void SaveChanges(this BikeDataDbContext dbContext) => dbContext.SaveChanges();
     }
