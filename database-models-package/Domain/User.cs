@@ -23,6 +23,8 @@ namespace BDPDatabase
 
         public int ExpiresIn { get; set; }
 
+        public bool IsHistoryFetched {get; set; }
+
         public List<UserContribution> UserContributions { get; set; }
 
     }
