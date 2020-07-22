@@ -42,17 +42,8 @@ namespace BDPDatabase
             return dbContext.UserContributions.Where(uc => uc.UserId == userIdentifier).Select(uc => uc.ContributionId);
         }
 
-        public static void DeleteContributions(this BikeDataDbContext dbContext, IEnumerable<int> contributionIds)
+        public static void DeleteContributions(this BikeDataDbContext dbContext, List<Contribution> contributions, List<UserContribution> userContributions)
         {
-            var contributions = new List<Contribution>();
-            var userContributions = new List<UserContribution>();
-
-            foreach (var contributionId in contributionIds)
-            {
-                contributions.Add(new Contribution() { ContributionId = contributionId });
-                userContributions.Add(new UserContribution() { ContributionId = contributionId });
-            }
-
             dbContext.UserContributions.RemoveRange(userContributions);
             dbContext.Contributions.RemoveRange(contributions);
 
