@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace bikedataproject_database_models_package.Migrations
 {
-    public partial class AddUserProvider : Migration
+    public partial class InitialDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -40,7 +40,8 @@ namespace bikedataproject_database_models_package.Migrations
                     RefreshToken = table.Column<string>(nullable: true),
                     TokenCreationDate = table.Column<DateTime>(nullable: false),
                     ExpiresAt = table.Column<int>(nullable: false),
-                    ExpiresIn = table.Column<int>(nullable: false)
+                    ExpiresIn = table.Column<int>(nullable: false),
+                    IsHistoryFetched = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {

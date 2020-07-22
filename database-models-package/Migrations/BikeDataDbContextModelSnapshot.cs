@@ -68,6 +68,9 @@ namespace bikedataproject_database_models_package.Migrations
                     b.Property<int>("ExpiresIn")
                         .HasColumnType("integer");
 
+                    b.Property<bool>("IsHistoryFetched")
+                        .HasColumnType("boolean");
+
                     b.Property<string>("Provider")
                         .HasColumnType("text");
 

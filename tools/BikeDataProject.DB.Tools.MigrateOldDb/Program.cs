@@ -20,7 +20,7 @@ namespace BikeDataProject.DB.Tools.MigrateOldDb
                 .Build();
             
             // setup serilog logging (from configuration).
-            var logger = new LoggerConfiguration()
+            Log.Logger =  new LoggerConfiguration()
                 .ReadFrom.Configuration(configuration)
                 .CreateLogger();
             
@@ -30,7 +30,10 @@ namespace BikeDataProject.DB.Tools.MigrateOldDb
             
             // setup DI.
             var serviceProvider = new ServiceCollection()
-                .AddLogging()
+                .AddLogging(b =>
+                {
+                    b.AddSerilog();
+                })
                 .AddSingleton<MigrateTask>()
                 .AddSingleton(new MigrateTaskConfiguration()
                 {

@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace bikedataproject_database_models_package.Migrations
 {
     [DbContext(typeof(BikeDataDbContext))]
-    [Migration("20200715131234_AddUserProvider")]
-    partial class AddUserProvider
+    [Migration("20200722110932_InitialDb")]
+    partial class InitialDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -69,6 +69,9 @@ namespace bikedataproject_database_models_package.Migrations
 
                     b.Property<int>("ExpiresIn")
                         .HasColumnType("integer");
+
+                    b.Property<bool>("IsHistoryFetched")
+                        .HasColumnType("boolean");
 
                     b.Property<string>("Provider")
                         .HasColumnType("text");
