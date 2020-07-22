@@ -50,6 +50,11 @@ namespace BDPDatabase
             dbContext.SaveChanges();
         }
 
+        public static IEnumerable<UserContribution> GetUserContributionsByContributionIds(this BikeDataDbContext dbContext, IEnumerable<int> contributionIds)
+        {
+            return dbContext.UserContributions.Where(uc => contributionIds.Contains(uc.ContributionId));
+        }
+
         public static void SaveChanges(this BikeDataDbContext dbContext) => dbContext.SaveChanges();
     }
 }
