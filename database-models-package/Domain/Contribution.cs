@@ -19,7 +19,5 @@ namespace BDPDatabase
         public byte[] PointsGeom { get; set; }
 
         public DateTimeOffset[] PointsTime { get; set; }
-
-
     }
 }

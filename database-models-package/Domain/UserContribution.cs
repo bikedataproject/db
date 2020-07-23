@@ -8,6 +8,5 @@ namespace BDPDatabase
         public int UserId { get; set; }
 
         public int ContributionId { get; set; }
-
     }
 }

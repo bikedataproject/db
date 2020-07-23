@@ -1,13 +1,13 @@
 # HOW TO UPDATE
 
 ```
-dotnet ef --startup-project ../console-project/ database update
+dotnet ef --startup-project ../tools/BikeDataProject.DB.Tools.Setup/ database update
 ```
 
 # HOW TO ADD A NEW MIGRATION
 
 ```
-dotnet ef --startup-project ../console-project/ migrations add YourMigrationName
+dotnet ef --startup-project ../tools/BikeDataProject.DB.Tools.Setup/ migrations add YourMigrationName
 ```
 
 # DEPLOY PACKAGE
