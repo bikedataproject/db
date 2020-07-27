@@ -120,7 +120,7 @@ namespace BikeDataProject.DB.Tools.MigrateOldDb
                 if (!(values[3] is int distance)) throw new Exception("Invalid distance");
                 if (!(values[4] is int duration)) throw new Exception("Invalid duration");
                 
-                var pointsTime = new DateTimeOffset[pointsTimeStamp.Length];
+                var pointsTime = new DateTime[pointsTimeStamp.Length];
                 for (var p = 0; p < pointsTimeStamp.Length; p++)
                 {
                     pointsTime[p] = pointsTimeStamp[p];
