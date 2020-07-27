@@ -1,5 +1,5 @@
 using System.Threading.Tasks;
-using BDPDatabase;
+using BikeDataProject.DB.Domain;
 using Microsoft.EntityFrameworkCore;
 
 namespace BikeDataProject.DB.Tools.Setup

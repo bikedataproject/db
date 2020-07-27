@@ -1,4 +1,4 @@
-using BDPDatabase;
+using BikeDataProject.DB.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 

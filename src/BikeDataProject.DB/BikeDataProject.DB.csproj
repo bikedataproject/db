@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>bikedataproject_database_models_package</RootNamespace>
-    <PackageId>bikedataproject.database.models.package</PackageId>
-    <Version>1.0.7</Version>
+    <RootNamespace>BikeDataProject.DB</RootNamespace>
+    <PackageId>BikeDataProject.DB</PackageId>
+    <Version>1.0.8</Version>
     <Authors>Ben, Guillaume, Bert, Antoine</Authors>
     <Company>Open Knowledge Belgium</Company>
     <PackageDescription>Contains the models for the BDP database</PackageDescription>

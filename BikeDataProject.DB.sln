@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bikedataproject-database-models-package", "database-models-package\bikedataproject-database-models-package.csproj", "{023081EC-18B4-4284-8FFE-F8506725D3AF}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{99FA1DED-82E1-4CC1-9879-D919241A7940}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeDataProject.DB.Tools.MigrateOldDb", "tools\BikeDataProject.DB.Tools.MigrateOldDb\BikeDataProject.DB.Tools.MigrateOldDb.csproj", "{6301FF27-FC50-40DC-924B-21C9D18A1D0D}"
@@ -19,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{AF687901-1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeDataProject.DB.Tools.Setup", "tools\BikeDataProject.DB.Tools.Setup\BikeDataProject.DB.Tools.Setup.csproj", "{71C8BD63-B802-4AE2-BFCE-3E0E64CF12B1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{48D8C135-5501-427A-AF36-D51DE52475AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeDataProject.DB", "src\BikeDataProject.DB\BikeDataProject.DB.csproj", "{1B8A322F-5AB6-4355-8CED-8BBE4FA56B56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,18 +34,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{023081EC-18B4-4284-8FFE-F8506725D3AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{023081EC-18B4-4284-8FFE-F8506725D3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{023081EC-18B4-4284-8FFE-F8506725D3AF}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{023081EC-18B4-4284-8FFE-F8506725D3AF}.Debug|x64.Build.0 = Debug|Any CPU
-		{023081EC-18B4-4284-8FFE-F8506725D3AF}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{023081EC-18B4-4284-8FFE-F8506725D3AF}.Debug|x86.Build.0 = Debug|Any CPU
-		{023081EC-18B4-4284-8FFE-F8506725D3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{023081EC-18B4-4284-8FFE-F8506725D3AF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{023081EC-18B4-4284-8FFE-F8506725D3AF}.Release|x64.ActiveCfg = Release|Any CPU
-		{023081EC-18B4-4284-8FFE-F8506725D3AF}.Release|x64.Build.0 = Release|Any CPU
-		{023081EC-18B4-4284-8FFE-F8506725D3AF}.Release|x86.ActiveCfg = Release|Any CPU
-		{023081EC-18B4-4284-8FFE-F8506725D3AF}.Release|x86.Build.0 = Release|Any CPU
 		{6301FF27-FC50-40DC-924B-21C9D18A1D0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6301FF27-FC50-40DC-924B-21C9D18A1D0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6301FF27-FC50-40DC-924B-21C9D18A1D0D}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -68,9 +58,22 @@ Global
 		{71C8BD63-B802-4AE2-BFCE-3E0E64CF12B1}.Release|x64.Build.0 = Release|Any CPU
 		{71C8BD63-B802-4AE2-BFCE-3E0E64CF12B1}.Release|x86.ActiveCfg = Release|Any CPU
 		{71C8BD63-B802-4AE2-BFCE-3E0E64CF12B1}.Release|x86.Build.0 = Release|Any CPU
+		{1B8A322F-5AB6-4355-8CED-8BBE4FA56B56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B8A322F-5AB6-4355-8CED-8BBE4FA56B56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B8A322F-5AB6-4355-8CED-8BBE4FA56B56}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1B8A322F-5AB6-4355-8CED-8BBE4FA56B56}.Debug|x64.Build.0 = Debug|Any CPU
+		{1B8A322F-5AB6-4355-8CED-8BBE4FA56B56}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1B8A322F-5AB6-4355-8CED-8BBE4FA56B56}.Debug|x86.Build.0 = Debug|Any CPU
+		{1B8A322F-5AB6-4355-8CED-8BBE4FA56B56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B8A322F-5AB6-4355-8CED-8BBE4FA56B56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B8A322F-5AB6-4355-8CED-8BBE4FA56B56}.Release|x64.ActiveCfg = Release|Any CPU
+		{1B8A322F-5AB6-4355-8CED-8BBE4FA56B56}.Release|x64.Build.0 = Release|Any CPU
+		{1B8A322F-5AB6-4355-8CED-8BBE4FA56B56}.Release|x86.ActiveCfg = Release|Any CPU
+		{1B8A322F-5AB6-4355-8CED-8BBE4FA56B56}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6301FF27-FC50-40DC-924B-21C9D18A1D0D} = {99FA1DED-82E1-4CC1-9879-D919241A7940}
 		{71C8BD63-B802-4AE2-BFCE-3E0E64CF12B1} = {99FA1DED-82E1-4CC1-9879-D919241A7940}
+		{1B8A322F-5AB6-4355-8CED-8BBE4FA56B56} = {48D8C135-5501-427A-AF36-D51DE52475AB}
 	EndGlobalSection
 EndGlobal

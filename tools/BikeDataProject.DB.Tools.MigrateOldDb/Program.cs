@@ -1,6 +1,5 @@
-﻿using System;
-using System.Threading.Tasks;
-using BDPDatabase;
+﻿using System.Threading.Tasks;
+using BikeDataProject.DB.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

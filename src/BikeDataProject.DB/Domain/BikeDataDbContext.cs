@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace BDPDatabase
+namespace BikeDataProject.DB.Domain
 {
     public class BikeDataDbContext : DbContext
     {

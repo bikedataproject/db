@@ -20,11 +20,11 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\database-models-package\bikedataproject-database-models-package.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <None Update="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\BikeDataProject.DB\BikeDataProject.DB.csproj" />
   </ItemGroup>
 </Project>

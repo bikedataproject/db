@@ -1,5 +1,5 @@
 
-namespace BDPDatabase 
+namespace BikeDataProject.DB.Domain
 {
     public class UserContribution
     {

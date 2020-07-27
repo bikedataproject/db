@@ -1,6 +1,6 @@
 using System;
 
-namespace BDPDatabase 
+namespace BikeDataProject.DB.Domain
 {
     public class Contribution
     {

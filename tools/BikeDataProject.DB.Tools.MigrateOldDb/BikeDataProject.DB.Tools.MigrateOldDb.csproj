@@ -21,7 +21,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\database-models-package\bikedataproject-database-models-package.csproj" />
+    <ProjectReference Include="..\..\src\BikeDataProject.DB\BikeDataProject.DB.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="appsettings.json">
