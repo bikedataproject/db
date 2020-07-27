@@ -10,14 +10,14 @@ namespace BDPDatabase
 
         public int Distance { get; set; }
 
-        public DateTimeOffset TimeStampStart { get; set; }
+        public DateTime TimeStampStart { get; set; }
 
-        public DateTimeOffset TimeStampStop { get; set; }
+        public DateTime TimeStampStop { get; set; }
 
         public int Duration { get; set; } //in seconds
 
         public byte[] PointsGeom { get; set; }
 
-        public DateTimeOffset[] PointsTime { get; set; }
+        public DateTime[] PointsTime { get; set; }
     }
 }

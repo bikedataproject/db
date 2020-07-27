@@ -34,7 +34,7 @@ namespace BikeDataProject.DB.Tools.MigrateOldDb
             _connection.TypeMapper.UseNetTopologySuite();
             
             // migrate users.
-            // await this.MigrateUsers();
+            await this.MigrateUsers();
             
             // migrate contributions.
             await this.MigrateContributions();
