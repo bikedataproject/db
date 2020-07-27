@@ -1,0 +1,23 @@
+name: .NET Core - Publish Package
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.x
+    - name: Install dependencies
+      run: dotnet restore 
+    - name: Pack
+      run: dotnet pack --configuration release
+      working-directory: ./src/BikeDataProject.DB/
