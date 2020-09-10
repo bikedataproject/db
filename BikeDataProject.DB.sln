@@ -21,6 +21,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{48D8C135-550
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeDataProject.DB", "src\BikeDataProject.DB\BikeDataProject.DB.csproj", "{1B8A322F-5AB6-4355-8CED-8BBE4FA56B56}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "db", "db", "{B9D123DE-232C-4F5F-9F21-B8057EAB0B39}"
+ProjectSection(SolutionItems) = preProject
+	db\db-create.sql = db\db-create.sql
+	db\model.png = db\model.png
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
