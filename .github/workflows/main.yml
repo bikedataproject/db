@@ -13,6 +13,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Prepare NuGet.Config
+      uses: datamonsters/replace-action@v2
+      with:
+        files: 'NuGet.Config.actions'
+        replacements: '%%username%%=xivk,%%token%%=${{ secrets.PACKAGES_SECRET }}'
+    - run: mv NuGet.Config.actions NuGet.Config 
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
@@ -21,4 +27,7 @@ jobs:
       run: dotnet restore 
     - name: Pack
       run: dotnet pack --configuration release
+      working-directory: ./src/BikeDataProject.DB/
+    - name: Push
+      run: dotnet nuget push **/*.nupkg --source github-bikedataproject
       working-directory: ./src/BikeDataProject.DB/

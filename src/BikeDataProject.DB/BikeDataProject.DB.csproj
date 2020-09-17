@@ -8,7 +8,7 @@
     <Authors>Ben, Guillaume, Bert, Antoine</Authors>
     <Company>Open Knowledge Belgium</Company>
     <PackageDescription>Contains the models for the BDP database</PackageDescription>
-    <RepositoryUrl>https://github.com/bikedataproject/bikedataproject-database-models-package</RepositoryUrl>
+    <RepositoryUrl>https://github.com/bikedataproject/db</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
