@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeDataProject.DB", "src\B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "db", "db", "{B9D123DE-232C-4F5F-9F21-B8057EAB0B39}"
 ProjectSection(SolutionItems) = preProject
-	db\db-create.sql = db\db-create.sql
+	db\db.sql = db\db.sql
 	db\model.png = db\model.png
 EndProjectSection
 EndProject
