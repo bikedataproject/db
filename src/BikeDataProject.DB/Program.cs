@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
@@ -42,7 +43,22 @@ namespace BikeDataProject.DB
             
             public async Task StartAsync(CancellationToken cancellationToken)
             {
-                await _db.Contributions.FirstOrDefaultAsync(cancellationToken: cancellationToken);
+                var c1 = await _db.Contributions.FirstOrDefaultAsync(cancellationToken: cancellationToken);
+
+                if (c1 == null)
+                {
+                    await _db.Contributions.AddAsync(new Contribution()
+                    {
+                        Distance = 100,
+                        Duration = 100,
+                        PointsGeom = Array.Empty<byte>(),
+                        PointsTime = Array.Empty<DateTime>(),
+                        UserAgent = "nothing",
+                        TimeStampStart = DateTime.Now.AddDays(-1),
+                        TimeStampStop = DateTime.Now
+                    });
+                    await _db.SaveChangesAsync();
+                }
 
                 return;
             }

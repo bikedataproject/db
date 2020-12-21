@@ -19,6 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "db", "db", "{B9D123DE-232C-
 ProjectSection(SolutionItems) = preProject
 	db\db.sql = db\db.sql
 	db\model.png = db\model.png
+	db\migration1-added-addedon.sql = db\migration1-added-addedon.sql
 EndProjectSection
 EndProject
 Global
