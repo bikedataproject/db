@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BikeDataProject.DB.Domain
+namespace BikeDataProject.DB
 {
     public static class BikeDataDbContextExtensions
     {

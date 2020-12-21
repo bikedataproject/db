@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace BikeDataProject.DB.Domain
+namespace BikeDataProject.DB
 {
     /// <summary>
     /// Represents a user.
