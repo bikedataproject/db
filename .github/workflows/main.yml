@@ -23,7 +23,7 @@ jobs:
       run: dotnet pack --configuration release
       working-directory: ./src/BikeDataProject.DB/
     - name: Push
-      run: dotnet nuget push **/*.nupkg --source github --skip-duplicate
+      run: dotnet nuget push **/*.nupkg --api-key ${{ github.GITHUB_TOKEN }} --source github --skip-duplicate
       working-directory: ./src/BikeDataProject.DB/
       env:
         DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER: false
