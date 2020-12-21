@@ -15,11 +15,15 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.100
+    - name: Add GitHub Nuget Source
+      run: dotnet nuget add source https://nuget.pkg.github.com/bikedataproject/index.json -n github -u xivk -p ${{secrets.PACKAGES_SECRET }} --store-password-in-clear-text
     - name: Install dependencies
       run: dotnet restore 
     - name: Pack
       run: dotnet pack --configuration release
       working-directory: ./src/BikeDataProject.DB/
     - name: Push
-      run: dotnet nuget push **/*.nupkg --source https://nuget.pkg.github.com/${{ github.repository_owner }} --skip-duplicate --api-key ${{ github.PACKAGES_SECRET }}
+      run: dotnet nuget push **/*.nupkg --source github --skip-duplicate
       working-directory: ./src/BikeDataProject.DB/
+      env:
+        DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER: false
