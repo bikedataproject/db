@@ -1,23 +1,6 @@
-# HOW TO UPDATE
+# db
 
-```
-dotnet ef --startup-project ../tools/BikeDataProject.DB.Tools.Setup/ database update
-```
+This is a .NET package to ease interaction with the contributions database with Entity Framework Core.
 
-# HOW TO ADD A NEW MIGRATION
+![Production](https://github.com/bikedataproject/db/workflows/Production/badge.svg)
 
-```
-dotnet ef --startup-project ../tools/BikeDataProject.DB.Tools.Setup/ migrations add YourMigrationName
-```
-
-# DEPLOY PACKAGE
-
-## Make a release of the package
-```
-dotnet pack -c release
-```
-
-## Deploy it to GitHub Packages
-```
-dotnet nuget push "bin/Release/bikedataproject.database.models.package.{VERSION_NUMBER}.nupkg" --source "github"
-```
