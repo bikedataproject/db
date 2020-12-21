@@ -3,15 +3,17 @@ using System;
 using BikeDataProject.DB;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace BikeDataProject.DB.Migrations
 {
     [DbContext(typeof(BikeDataDbContext))]
-    partial class BikeDataDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201221143517_Add_AddedOn")]
+    partial class Add_AddedOn
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

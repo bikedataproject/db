@@ -19,5 +19,7 @@ namespace BikeDataProject.DB
         public byte[] PointsGeom { get; set; }
 
         public DateTime[] PointsTime { get; set; }
+        
+        public DateTime? AddedOn { get; set; } = DateTime.Now;
     }
 }
