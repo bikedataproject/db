@@ -26,4 +26,4 @@ jobs:
       run: dotnet nuget push **/*.nupkg --source github --skip-duplicate
       working-directory: ./src/BikeDataProject.DB/
       env:
-        DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER: 0
+        DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER: false
